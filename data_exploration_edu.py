@@ -2,9 +2,10 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-df=pd.read_csv('master_data/Premi_ClubQ8.csv', sep=;)
+df=pd.read_csv('master_data/Premi_ClubQ8.csv', sep=';')
 df_head = df.head(1000)
-df_nan_sum = summarize_na(df) df_nan_sum # to check how many cels have no data in it
+df_nan_sum = summarize_na(df) 
+df_nan_sum # to check how many cels have no data in it
 df = df.set_index(COD_PAN_DA_POS) # set directly the ID code as the index of the dataframe
 # see the caategorical variables and the absolute variables
 cols_focus_cat = [
@@ -30,8 +31,8 @@ df['RAGGRUPPAMENTO_MERCEOLOGICO'].value_counts()
 df['DESCRIZIONE'].value_counts()
 
 tmp = get_frequencies(df['CATEGORIA'], n_categories=2)['relative']
-           cmap = cm.get_cmap('viridis')
-           ax = tmp.plot(kind='pie',
+cmap = cm.get_cmap('viridis')
+ax = tmp.plot(kind='pie',
 title="More fuel or Rewards?", autopct='{:02.2f}%'.format,
 legend=True,
 labeldistance=None,
