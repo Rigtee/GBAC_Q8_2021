@@ -62,8 +62,7 @@ title="More fuel or Rewards?", autopct='{:02.2f}%'.format,
 legend=True,
 labeldistance=None,
 startangle=170,
-colors=[cmap(i) for i in np.linspace(.25, .9, len(tmp
- ))],
+colors=[cmap(i) for i in np.linspace(.25, .9, len(tmp))],
 ax.set(ylabel='NAME_FAMILY_STATUS')
 plt.show()
 
@@ -79,14 +78,14 @@ colors=[cmap(i) for i in np.linspace(.25, .9, len(tmp
 ax.set(ylabel='NAME_FAMILY_STATUS')
 plt.show()
 #Change the name of the columns to better understand the data
-df['DESCRIZIONE'] = REWARD
-df['RAGGRUPPAMENTO_MERCEOLOGICO'] = MATERIAL_GROUPING
-df['LUOGO_PRENOTAZIONE_PREMIO'] = REQUEST_PLACE
-df['COD_PAN_DA_POS'] = CUSTOMER_CODE
-df['CATEGORIA'] = CATEGORY
-df['DATA_OPERAZIONE'] = TRANSACTION_DATE
-df['CONTRIBUTO_CLIENTE_CON_IVA'] = CUSTOMER_CONTRIBUTION
-df['PUNTI_RICHIESTI'] = REMAINING_POINTS
+df['DESCRIZIONE'] = "REWARD"
+df['RAGGRUPPAMENTO_MERCEOLOGICO'] = "MATERIAL_GROUPING"
+df['LUOGO_PRENOTAZIONE_PREMIO'] = "REQUEST_PLACE"
+df['COD_PAN_DA_POS'] = "CUSTOMER_CODE"
+df['CATEGORIA'] = "CATEGORY"
+df['DATA_OPERAZIONE'] = "TRANSACTION_DATE"
+df['CONTRIBUTO_CLIENTE_CON_IVA'] ="CUSTOMER_CONTRIBUTION"
+df['PUNTI_RICHIESTI'] = "REMAINING_POINTS"
 
 
 
