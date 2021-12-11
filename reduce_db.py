@@ -11,3 +11,5 @@ db3_head = db3.head(1000)
 db1_head.to_csv('copy_master_data/Anagrafica_ClubQ8_red.csv', sep = ';')
 db2_head.to_csv('copy_master_data/Premi_ClubQ8_red.csv', sep = ';')
 db3_head.to_csv('copy_master_data/Rifornimenti_Carburante_ClubQ8_red.csv', sep = ';')
+
+#Test using PyCharm
