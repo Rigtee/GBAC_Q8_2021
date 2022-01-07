@@ -1,5 +1,3 @@
 #MasterData
 /master_data
-copy_master_data/Anagrafica_ClubQ8_red.csv
-copy_master_data/Premi_ClubQ8_red.csv
-copy_master_data/Rifornimenti_Carburante_ClubQ8_red.csv
+/copy_master_data
